@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row pt-5 mt-5">
+    <div class="col-4">
+
+    </div>
+    <div class="col-3">
+      {{#with session}}
+        <p class="text-danger">{{valid}}</p>
+      {{/with}}
+      <form action="/login" method="post">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+
+          <label class="form-label" for="form2Example1">Email address</label>
+          <input
+            type="email"
+            id="form2Example1"
+            class="form-control"
+            name="email"
+            value="www@com" required
+
+          />
+
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example2">Password</label>
+          <input
+            type="password"
+            id="form2Example2"
+            class="form-control"
+            name="password"
+            value="we" required
+          />
+
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+
+        <div>
+          <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>

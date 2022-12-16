@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<header>
+    <div class="row">
+        <div class="col-10">
+            <h2>HOME PAGE</h2>
+        </div>
+        <div class="col-md-2 text-danger">
+            <a href="/logout" class="btn btn-danger">LOGOUT</a>
+
+        </div>
+    </div>
+
+</header>
+
+<div class="row ">
+    {{#each cars}}
+    <div class="card col-md-4 mx-auto" style="width: 300px;">
+        <img src={{this.source}} class="card-img-top" alt="Sample Image">
+        <div class="card-body ">
+            <h5 class="card-title">{{this.name}}</h5>
+            <h3 class="card-titl">{{this.color}}</h3>
+            <p class="card-titl">{{this.description}}</p>
+
+
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+        </div>
+    </div>
+
+    {{/each}}
